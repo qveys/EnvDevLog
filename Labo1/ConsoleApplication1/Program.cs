@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClassLibrary1;
+using System.Diagnostics;
 
 namespace ConsoleApplication1
 {
@@ -18,11 +19,14 @@ namespace ConsoleApplication1
             Activity a4 = new Activity("Gym", false);
             Activity a5 = new Activity("Sciences", true);
 
-            p1.AddActivity(a1);
-            p1.AddActivity(a2);
-            p1.AddActivity(a3);
-            p1.AddActivity(a4);
-            p1.AddActivity(a5);
+            //p1.AddActivity(a1);
+            //p1.AddActivity(a2);
+            //p1.AddActivity(a3);
+            //p1.AddActivity(a4);
+            //p1.AddActivity(a5);
+
+            p1.AddActivity("Math");
+            p1.AddActivity("Francais");
 
             System.Console.Write(p1);
 
@@ -51,6 +55,8 @@ namespace ConsoleApplication1
             //Expression lambda
                 var pupilGrade1Plus6 = listPupils.Where(pupil => pupil.Grade == 1 && pupil.Age > 6);
             //
+
+                Debug.WriteLine(pupilGrade1Plus6);
  
             if (pupilGrade1Plus6 != null)
             {
