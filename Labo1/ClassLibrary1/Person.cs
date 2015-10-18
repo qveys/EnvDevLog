@@ -8,6 +8,7 @@ namespace ClassLibrary1
 {
     public class Person
     {
+        private String name;
         public String Name
         {
             get;
